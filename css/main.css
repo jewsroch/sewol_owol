@@ -114,7 +114,7 @@ img {
 }
 
 
-#sticky-image-container {
+.image-container {
   height: 350px;
   width: 100%;
   position: relative;
@@ -124,28 +124,32 @@ img {
   /*left: 5%;*/
   overflow: hidden;
 }
-#sticky-image {
+.sticky-image {
   position: relative;
-  background-image:url('http://www.dilettantearmy.com/wp-content/uploads/2014/09/damibox.com_.jpeg');
+  background-image:url('../img/sewol_owol_original.jpeg');
   background-repeat: no-repeat;
   background-size: contain;
   height: 100%;
   width: 100%;
+}
+.sticky-image.second {
+  background-image: url('../img/sewol_owol_new-1024x243.jpeg');
 }
 
 .fixed {
   position:fixed !important;
   width: 90% !important;
   left: 5% !important;
-
+  z-index: 10;
 }
+
 section.copy {
   max-width: 700px;
   margin: auto;
 }
 
 .after {
-  margin-top: 350px !important;
+  margin-top: 375px !important;
 }
 
 
